@@ -26,9 +26,6 @@ dependencies {
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:cardview-v7:23.1.1'
-//    compile project(':share'){
-//        exclude module: 'support-v4'
-//    }
     compile project(':share')
 
 }
