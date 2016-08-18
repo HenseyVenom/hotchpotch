@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/WeChatSDK_sample_Android221cbf/WeChatSDK_sample_Android221cbf.iml" filepath="$PROJECT_DIR$/WeChatSDK_sample_Android221cbf/WeChatSDK_sample_Android221cbf.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appbar/appbar.iml" filepath="$PROJECT_DIR$/appbar/appbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/hotchpotch.iml" filepath="$PROJECT_DIR$/hotchpotch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/share/share.iml" filepath="$PROJECT_DIR$/share/share.iml" />
     </modules>
   </component>
 </project>

@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':appbar', ':WeChatSDK_sample_Android221cbf', ':share'

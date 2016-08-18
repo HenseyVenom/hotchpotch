@@ -46,16 +46,16 @@ public class ParabolaView extends ImageView {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
-    @Override
-    protected void onFinishInflate() {
-        super.onFinishInflate();
-    }
-
+    /**
+     * 开始抛射动画
+     * @param speed 初始抛射速度
+     * @param endPoint 结束位置
+     */
     public void startParabola(final int speed, final PointF endPoint) {
 
         setAlpha(1.0f);
+        //抛射角度
         final double alpha = 30;
-        double       d     = Math.cos(Math.toRadians(alpha));
         Log.e("ParabolaView","end y : "+endPoint.y);
 
         final float  x    = endPoint.x - startPoint.x;
@@ -72,7 +72,6 @@ public class ParabolaView extends ImageView {
                 float currentTime= (float) (fraction*time);
                 float x = (float) (speed*Math.cos(Math.toRadians(alpha)) * currentTime + startPoint.x);
                 float y= (float) ((0.5*g*Math.pow(currentTime,2))-(speed*Math.sin(Math.toRadians(alpha))*currentTime)+startPoint.y);
-//                Log.e("ParabolaView", "fraction : " + fraction+" ; x : "+x+" ; y : "+y+" : v : "+vcy+" : vg : "+vcyg);
                 return new PointF(x, y);
             }
         });
