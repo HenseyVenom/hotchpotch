@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "0.1"
+version = "0.2"
 
 android {
     compileSdkVersion 23
@@ -23,10 +23,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-//    compile 'junit:junit:4.12'
-//    compile('com.android.support:appcompat-v7:23.1.1') {
-//        exclude group:'com.android.support',module:'support-v4'
-//    }
 }
 
 def siteUrl = 'https://github.com/HenseyVenom/hotchpotch'    // project homepage
@@ -92,7 +88,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "share"                // project name in jcenter
+        name = "share-utils"                // project name in jcenter
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ['Apache-2.0']
